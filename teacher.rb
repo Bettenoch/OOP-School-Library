@@ -4,8 +4,8 @@ class Teacher < Person
     # getter/setter method
     attr_accessor :specialization
     # constructor method
-    def initialize(age, specialization, name = 'Unknown', parent_permission: true)
-      super(age, name, parent_permission)
+    def initialize(specialization, name = 'Unknown')
+      super('John', 18)
       @specialization = specialization
     end
     # override method
@@ -13,3 +13,6 @@ class Teacher < Person
       true
     end
   end
+
+  tutor = Teacher.new('Chemistry', 'Tom')
+  tutor.can_use_services?

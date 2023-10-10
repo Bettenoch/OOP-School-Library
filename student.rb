@@ -3,13 +3,15 @@ require "./person.rb"
 class Student < Person
   attr_accessor :classroom
   # constructor method
-  def initialize(classroom, age, name = 'Unknown', parent_permission: true)
-    super(age, name, parent_permission)
+  def initialize(classroom, name = 'Unknown')
+    super('blue', 18)
     @classroom = classroom
-    end
+  end
   # instance method
   def play_hooky
-    '¯\\(ツ)/¯'
+    p '¯\\(ツ)/¯'
   end
 end
-  
+
+stud = Student.new('ham', 'kan')
+stud.play_hooky
