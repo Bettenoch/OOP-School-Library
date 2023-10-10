@@ -1,18 +1,20 @@
-require "./person.rb"
+require './person'
 
 class Teacher < Person
-    # getter/setter method
-    attr_accessor :specialization
-    # constructor method
-    def initialize(specialization, name = 'Unknown')
-      super('John', 18)
-      @specialization = specialization
-    end
-    # override method
-    def can_use_services?
-      true
-    end
-  end
+  # getter/setter method
+  attr_accessor :specialization
 
-  tutor = Teacher.new('Chemistry', 'Tom')
-  tutor.can_use_services?
+  # constructor method
+  def initialize(specialization)
+    super('John', 18)
+    @specialization = specialization
+  end
+  # override method
+
+  def can_use_services?
+    true
+  end
+end
+
+# tutor = Teacher.new('Chemistry')
+# tutor.can_use_services?
