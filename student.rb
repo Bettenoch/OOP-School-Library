@@ -15,5 +15,5 @@ class Student < Person
   end
 end
 
-# stud = Student.new('ham')
-# stud.play_hooky
+stud = Student.new(18, 'yellow')
+stud.play_hooky
