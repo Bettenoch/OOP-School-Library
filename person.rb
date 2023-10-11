@@ -1,7 +1,7 @@
 require './nameable'
 require './base_decorator'
 require './capitalize_decorator'
-require_relative './trimmer_decorator'
+require './trimmer_decorator'
 
 class Person < Nameable
   # getter/setter methods
