@@ -131,14 +131,14 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd OOP-school=library
-  node npm install
+  cd OOP-school-library
+   bundle install
 ```
 
 ### Usage
 
 To run the project, execute the following command:
-run live server
+- `bundle install`
 
 ### Run tests
 
@@ -146,7 +146,7 @@ To run tests, run the following command:
 Run Github Actions Test
 
 ```sh
-  npm test
+  - `rubocop --color`
 ```
 
 ### Deployment
