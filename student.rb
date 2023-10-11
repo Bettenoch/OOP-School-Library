@@ -4,8 +4,8 @@ class Student < Person
   attr_accessor :classroom
 
   # constructor method
-  def initialize(classroom)
-    super('blue', 18)
+  def initialize(age, classroom, name = 'Unknown', parent_permission: true)
+    super(age, name, parent_permission)
     @classroom = classroom
   end
   # instance method
@@ -15,5 +15,5 @@ class Student < Person
   end
 end
 
-stud = Student.new('ham')
-stud.play_hooky
+# stud = Student.new('ham')
+# stud.play_hooky

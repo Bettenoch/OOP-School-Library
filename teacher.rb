@@ -5,8 +5,8 @@ class Teacher < Person
   attr_accessor :specialization
 
   # constructor method
-  def initialize(specialization)
-    super('John', 18)
+  def initialize(age, specialization, name = 'Unknown', parent_permission: true)
+    super(age, name, parent_permission)
     @specialization = specialization
   end
   # override method
