@@ -2,11 +2,12 @@ require './nameable'
 require './base_decorator'
 require './capitalize_decorator'
 require './trimmer_decorator'
+require './rental'
 
 class Person < Nameable
   # getter/setter methods
   attr_reader :id
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals
 
   # constructor method
   def initialize(age, name = 'Unknown', parent_permission: true)
@@ -16,6 +17,7 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
   end
   # instance methods
 
@@ -29,6 +31,11 @@ class Person < Nameable
   # private method
 
   private
+
+  # belongs-to side of Rental and Person (a rental belongs to a person).
+  def add_rental(book, date)
+    Rental.new(date, book, self)
+  end
 
   def of_age?
     age >= 18
