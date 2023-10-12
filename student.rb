@@ -9,6 +9,7 @@ class Student < Person
     @classroom = classroom
   end
   # instance methods
+
   def classroom=(classroom)
     @classroom = classroom
     # has-many/belongs-to relationship between Classroom and Student

@@ -20,6 +20,7 @@ class Person < Nameable
     @rentals = []
   end
   # instance methods
+
   def correct_name
     name
   end
@@ -30,6 +31,7 @@ class Person < Nameable
   # private method
 
   private
+
   # belongs-to side of Rental and Person (a rental belongs to a person).
   def add_rental(book, date)
     Rental.new(date, book, self)
