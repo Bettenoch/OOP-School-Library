@@ -34,7 +34,7 @@ class App
 
   def list_all_people
     puts 'Oops! No one has rented a book yet' if @people.empty?
-    @people.each{|person| puts "[#{person.class}] Name: #{person.name}, Age: #{person.age}, ID: #{person.id}"}
+    @people.each { |person| puts "[#{person.class}] Name: #{person.name}, Age: #{person.age}, ID: #{person.id}" }
   end
 
   # option 1 Create a student
@@ -60,7 +60,8 @@ class App
     @people << Teacher.new(specialization, age, name)
     puts 'Person created successfully'
   end
-    # option 3 - Create a person
+  # option 3 - Create a person
+
   def create_person
     print 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
     option = gets.chomp
@@ -146,4 +147,4 @@ class App
       puts 'You entered a wrong input, [choose input from 1-6]'
     end
   end
-end  
+end

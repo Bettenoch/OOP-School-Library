@@ -1,4 +1,3 @@
-
 class Book
   # getter/setter methods
   attr_accessor :title, :author, :rentals
@@ -10,7 +9,7 @@ class Book
   end
 
   def add_rental(person, date)
-     Rental.new(date, self, person)
+    Rental.new(date, self, person)
     # has-many side of Book and Rental
   end
 end

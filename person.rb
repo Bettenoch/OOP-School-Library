@@ -22,6 +22,7 @@ class Person < Nameable
   end
   # instance methods
   # belongs-to side of Rental and Person (a rental belongs to a person).
+
   def add_rental(rental)
     @rentals.append(rental)
   end
