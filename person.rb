@@ -3,6 +3,7 @@ require './base_decorator'
 require './capitalize_decorator'
 require './trimmer_decorator'
 require './rental'
+require './book'
 
 class Person < Nameable
   # getter/setter methods
@@ -20,6 +21,10 @@ class Person < Nameable
     @rentals = []
   end
   # instance methods
+  # belongs-to side of Rental and Person (a rental belongs to a person).
+  def add_rental(rental)
+    @rentals.append(rental)
+  end
 
   def correct_name
     name
@@ -32,10 +37,6 @@ class Person < Nameable
 
   private
 
-  # belongs-to side of Rental and Person (a rental belongs to a person).
-  def add_rental(book, date)
-    Rental.new(date, book, self)
-  end
 
   def of_age?
     age >= 18
@@ -50,3 +51,7 @@ capitalized_person = CapitalizeDecorator.new(person)
 puts capitalized_person.correct_name
 capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
 puts capitalized_trimmed_person.correct_name
+
+# book = Book.new('Atomic Habits','James Clear')
+# rental_person = Rental.new(person,book,'3/3/2023')
+# puts rental_person
