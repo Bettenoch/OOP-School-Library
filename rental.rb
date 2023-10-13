@@ -6,8 +6,8 @@ class Rental
     @book = book
     @person = person
     # belongs-to side of Rental and Person
-    person.rentals << self
+    @person.rentals << self if @person.is_a?(Person)
     # belongs-to side of Rental and Book
-    book.rentals << self
+    @book.rentals << self if @book.is_a?(Book)
   end
 end
