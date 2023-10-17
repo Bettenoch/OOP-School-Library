@@ -18,12 +18,10 @@ class Teacher < Person
   def to_h
     {
       _class: self.class.name,
-      object_id: object_id,
       id: @id,
       name: @name,
       age: @age,
       specialization: @specialization,
-      rentals: @rentals
     }
   end
 end

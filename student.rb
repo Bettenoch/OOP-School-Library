@@ -23,12 +23,10 @@ class Student < Person
   def to_h
     {
       _class: self.class.name,
-      object_id: object_id,
       id: @id,
       name: @name,
       age: @age,
       parent_permission: @parent_permission,
-      rentals: @rentals,
       classroom: @classroom
     }
   end
