@@ -119,7 +119,7 @@ class App
 
   # option 6 - List all rentals for a person
   def rentals_by_id
-    @rentals = read_file('./data/rentals.json')
+    @rentals = read_data('./data/rentals.json')
     puts '=================== PEOPLE ==================='
     list_all_people
     print 'Enter person ID: '

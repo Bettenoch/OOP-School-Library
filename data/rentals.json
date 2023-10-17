@@ -1,1 +1,1 @@
-[{"_class":"Rental","object_id":80,"date":"2023/17/10","book":{"_class":"Book","object_id":100,"title":"River between","author":"Chinua achebe","rentals":[]},"person":{"_class":"Student","object_id":60,"id":705,"name":"Alex","age":22,"parent_permission":true,"rentals":[],"classroom":" "}}]
+[{"_class":"Rental","object_id":80,"date":"38","book":{"_class":"Book","object_id":60,"title":"History","author":"Abbas","rentals":[]},"person":{"_class":"Student","id":38,"name":"Qaisar","age":35,"parent_permission":true,"classroom":" "}}]
