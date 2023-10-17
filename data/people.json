@@ -1,1 +1,1 @@
-[{"_class":"Teacher","object_id":60,"id":265,"name":"Jean","age":26,"specialization":"Biology","rentals":[]},{"_class":"Student","object_id":80,"id":399,"name":"Roy","age":20,"parent_permission":true,"rentals":[],"classroom":" "},{"_class":"Student","object_id":60,"id":705,"name":"Alex","age":22,"parent_permission":true,"rentals":[],"classroom":" "}]
+[{"_class":"Student","id":1000,"name":"Bett","age":23,"parent_permission":true,"classroom":" "},{"_class":"Teacher","id":149,"name":"Max","age":25,"specialization":"Biology"}]
