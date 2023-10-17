@@ -1,0 +1,1 @@
+[{"_class":"Teacher","object_id":60,"id":265,"name":"Jean","age":26,"specialization":"Biology","rentals":[]},{"_class":"Student","object_id":80,"id":399,"name":"Roy","age":20,"parent_permission":true,"rentals":[],"classroom":" "},{"_class":"Student","object_id":60,"id":705,"name":"Alex","age":22,"parent_permission":true,"rentals":[],"classroom":" "}]
