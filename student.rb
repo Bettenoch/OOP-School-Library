@@ -19,6 +19,17 @@ class Student < Person
   def play_hooky
     p '¯\\(ツ)/¯'
   end
+
+  def to_h
+    {
+      _class: self.class.name,
+      id: @id,
+      name: @name,
+      age: @age,
+      parent_permission: @parent_permission,
+      classroom: @classroom
+    }
+  end
 end
 
 # stud = Student.new(18, 'yellow')
