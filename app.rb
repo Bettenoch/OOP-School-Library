@@ -34,7 +34,7 @@ class App
   def list_all_books
     @books = read_data('./data/books.json')
     puts 'Oops! Book list is empty!' if @books.empty?
-    @books.each { |book| puts "Title: \"#{book['title']}\", Author: #{book['author']}\" Rentals: #{book['rentals']}"}
+    @books.each { |book| puts "Title: \"#{book['title']}\", Author: #{book['author']}\" Rentals: #{book['rentals']}" }
   end
 
   def list_all_people
@@ -46,8 +46,7 @@ class App
   end
 
   # option 1 Create a student
-  def create_student (name, age)
-
+  def create_student(name, age)
     puts 'Does he/she have parent permission? [Y/N]: '
     permission = gets.downcase == 'y'
     @people << Student.new(age, name, permission)
@@ -101,7 +100,7 @@ class App
     @books = read_data('./data/books.json')
     puts 'Please choose a book from the following list by number (not by id)'
     @books.each_with_index { |book, index| puts "#{index}) Title: \"#{book['title']}\", Author: \"#{book['author']}\"" }
-  
+
     book_no = gets.chomp.to_i
 
     @people = read_data('./data/people.json')
