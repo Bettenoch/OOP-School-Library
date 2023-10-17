@@ -8,7 +8,7 @@
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 OOP School Library ](#-School Library-)
-    - [How to build the Decode-Morse-Code"](#how-to-build-the-School Library)
+    - [How to build the OOP School Library"](#how-to-build-the-School Library)
   - [🛠 Walk through ](#-walk-through-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
