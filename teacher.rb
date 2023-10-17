@@ -21,7 +21,7 @@ class Teacher < Person
       id: @id,
       name: @name,
       age: @age,
-      specialization: @specialization,
+      specialization: @specialization
     }
   end
 end
