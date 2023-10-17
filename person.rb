@@ -5,7 +5,6 @@ require './trimmer_decorator'
 require './rental'
 require './book'
 
-
 class Person < Nameable
   # getter/setter methods
   attr_reader :id
