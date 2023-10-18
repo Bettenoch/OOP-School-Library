@@ -1,3 +1,7 @@
+require_relative 'rental' 
+require_relative 'person'
+require_relative 'nameable'
+
 class Book
   # getter/setter methods
   attr_accessor :title, :author, :rentals
