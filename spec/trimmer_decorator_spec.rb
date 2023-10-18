@@ -5,7 +5,7 @@ require_relative '../capitalize_decorator'
 
 describe CapitalizeDecorator do
   context 'Create instance of trimmer and test'
-  
+
   it 'should capitalize first letter and trim the name to 10 chars' do
     person = Person.new(2, 'iamnickoledeon')
     capitalize_person = CapitalizeDecorator.new(person)

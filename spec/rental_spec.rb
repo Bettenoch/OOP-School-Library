@@ -20,7 +20,7 @@ describe Rental do
       expect(person_one.rentals.length).to eq 2
       expect(book_one.rentals.length).to eq 2
       expect(person_one.rentals).to include @rental_two, @rental_one
-      expect(person_two.rentals).to include @rental_three  
+      expect(person_two.rentals).to include @rental_three
     end
   end
 end
