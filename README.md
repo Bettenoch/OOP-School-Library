@@ -155,13 +155,19 @@ This project is deployed at github pages you can clone it here. [Please click to
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Author
+## Authors
 
 👤 **Bett Enoch**
 
 - GitHub: [@bettenoch](https://github.com/Bettenoch)
 - Twitter: [@BybEnoch](https://twitter.com/BybEnoch)
 - LinkedIn: [@GeoIntelligence](https://www.linkedin.com/in/bett-kipngeno-enock-8b5153214/)
+
+👤 **Qaisar Abbas**
+
+- GitHub: [@githubhandle](https://github.com/Kaiserabbas/)
+- Twitter: [@twitterhandle](https://twitter.com/@AbbasKayser)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/qaisar-abbas-21a93840/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
